@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seno e Coseno con controlli HTML</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js" integrity="sha512-3WFaXQUsbGieECwv3t3DvyAkZ7pp+/rIKOQnx7NKhfwIF0u2l+DYsE2eF635ewJVj3YTU4/Ug6UqEkSTZCiSew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <form 
+        id="mainForm">
+        <div 
+            class="container">
+            <label>
+                <p>
+                    AMPIEZZA:
+                </p>
+                <input 
+                    type="range" 
+                    name="breadth" 
+                    value="50"  
+                    min="10" 
+                    max="100">
+            </label>
+            <label>
+                <p>
+                    FREQUENZA:
+                </p>
+                <input 
+                    type="range" 
+                    name="frequency" 
+                    value="5" 
+                    min="0" 
+                    max="10">
+            </label>
+            <label>
+                <p>
+                    FASE:
+                </p>
+                <input 
+                    type="range" 
+                    name="fase" 
+                    value="50" 
+                    min="0" 
+                    max="100">
+            </label>
+        </div>
+    </form>
+    <script src="./static/js/libs/p5js/p5.min.js"></script>
+    <script src="./static/js/script.js"></script>
+</body>
+</html>
