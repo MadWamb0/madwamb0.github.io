@@ -3,11 +3,9 @@ let borderClick = document.getElementById("span")
 
 
 whiteBox.forEach(elem=>elem.addEventListener("click",()=>{
+	whiteBox.forEach(e=>e.style.border = "1px black solid")
 	document.querySelector("body").style.backgroundColor=elem.getAttribute("color")
 	document.querySelector("body").style.transition="all 1s"
-	let position = elem.getBoundingClientRect()
-	span.style.display="block"
-	span.style.top=`${position.top}px`
-	span.style.left=`${position.left-1}px`
+	element.style.border = "3px black solid"
 }))
 
