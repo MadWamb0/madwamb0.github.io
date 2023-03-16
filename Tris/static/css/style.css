@@ -1,0 +1,71 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+th{
+	border: 1px solid black;
+	width: 150px;
+	height: 150px;
+	font-family: sans-serif, Helvetica;
+	font-size: 120px;
+}
+
+#winnerBox{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: block;
+	text-align: center;
+	visibility: hidden;
+
+}
+
+.winner{
+	font-family: sans-serif, Helvetica;
+	font-size: 10px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 2s;
+}
+
+.animation{
+	visibility: visible;
+	font-size: 50px;
+background: rgb(89,89,89);
+background: radial-gradient(circle, rgba(89,89,89,1) 0%, rgba(255,255,255,0) 52%);
+	transition: all 2s;
+}
+
+
+
+.tableContainer{
+	height: 450px;
+	width: 450px;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+.container{
+	width: 50%;
+	margin: 0 auto;
+	height: 100vh;
+}
+
+table{
+	margin: 0 auto;
+}
+
+h1{
+	font-family: sans-serif, Helvetica;
+	font-size: 20px;
+	text-align: center;
+	padding: 20px;
+}
