@@ -102,3 +102,12 @@
 .copy img{
 	background-color: #D8572A;
 }
+
+.url{
+	margin-top: 15px;
+	text-align: center;
+}
+
+.url a{
+	text-decoration: none;
+}

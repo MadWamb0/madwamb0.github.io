@@ -29,6 +29,9 @@ document.querySelector("#generator").addEventListener("click",function (e){
 	function finalCallback(data){
 		console.log(data.value)
 		document.querySelector("#response").innerHTML = data.value
+		let a = document.querySelector(".jokeurl")
+		a.innerHTML = "Joke Url"
+		a.setAttribute("href", data.url)
 	}
 
 
@@ -36,6 +39,8 @@ document.querySelector("#generator").addEventListener("click",function (e){
 		.then(thenCallback)
 		.then(finalCallback)
 		.catch(catchCallback)
+
+
 
 
 })
