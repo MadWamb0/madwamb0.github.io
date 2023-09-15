@@ -1,0 +1,19 @@
+*{
+	margin: 0 auto;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.hero{
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../images/meteo.jpg");
+	background-size: cover;
+	display: inline-block;
+	text-align: center;
+}
+
+.title{
+	margin-top: 15%;
+	
+}
