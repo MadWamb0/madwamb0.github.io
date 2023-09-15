@@ -7,25 +7,53 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
-
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<title>
 		Esercizio weather forecast
 	</title>
 </head>
 <body>
-	<div
-		class="hero">
-		<h1
-			class="title">
-			METEO
-		</h1>
-		<h2
-			class="subtitle">
-			Benvenuto nel mio sito web!
-		</h2>
-	</div>
-	<div>
-		
-	</div>
+	<section
+		id="hero"
+		class="d-flex justify-content-center align-items-center">
+		<div
+			class="content text-center text-white">
+			<h1>Previsioni del tempo</h1>
+			<h2>Inserisci i dati nei campi</h2>
+			<div
+				class="formWrapper">
+				<form
+					action=""
+					method="get">
+					<div
+						class="sas">
+						<div
+						id="lat"
+						class="field flex-fill me-5">
+							<label>Latitudine</label>
+							<input id="inputLat" class="d-block" type="text" name="lat" placeholder="52.52">
+						</div>
+						<div
+							id="lng"
+							class="field flex-fill ms-5">
+							<label>Longitudine</label>
+							<input id="inputLng" class="d-block" type="text" name="lng" placeholder="52.52">
+						</div>
+					</div>
+
+					<div 
+						class="sas">
+                        <div class="field me-5">
+                            <input class="d-block btn btn-light" type="reset" value="Reset">
+                        </div>
+
+                        <div class="field ms-5">
+                            <input class="d-block btn btn-success" type="submit" value="Richiedi i dati">
+                        </div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
 </body>
 </html>
