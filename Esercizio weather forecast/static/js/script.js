@@ -10,6 +10,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
 
             console.log(url)
 
+
             fetch(url).then(function (resp) {
                 return resp.json()
             }).then(function (data) {
