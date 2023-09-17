@@ -32,16 +32,14 @@
 					<div
 						class="sas">
 						<div
-						id="lat"
-						class="field flex-fill me-5">
+							class="field flex-fill me-5">
 							<label>Latitudine</label>
-							<input id="inputLat" class="d-block" type="text" name="lat" placeholder="52.52">
+							<input id="lat" class="d-block" type="text" name="lat" placeholder="52.52">
 						</div>
 						<div
-							id="lng"
 							class="field flex-fill ms-5">
 							<label>Longitudine</label>
-							<input id="inputLng" class="d-block" type="text" name="lng" placeholder="52.52">
+							<input id="lng" class="d-block" type="text" name="lng" placeholder="52.52">
 						</div>
 					</div>
 
@@ -55,6 +53,10 @@
                             <input class="d-block btn btn-success" type="submit" value="Richiedi i dati">
                         </div>
 					</div>
+					<label
+						id="out">
+						ciao
+					</label>
 				</form>
 			</div>
 		</div>
@@ -63,16 +65,22 @@
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
 	<script type="text/javascript">
-		var map = L.map('map').setView([51.505, -0.09], 13);
+		var map = L.map('map').setView([41.12422644510446, 16.777796745300297], 16);
 		L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		    maxZoom: 19,
 		    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 		}).addTo(map);
+		var marker
+		let trueMarker = false
 	   map.on("click",function (e){
+	   	if (trueMarker) {
+	   		map.removeLayer(marker)
+	   	}
     	console.log(e)
-    	var marker = L.marker([e.latlng.lat, e.latlng.lng]).addTo(map);
-    	
+    	trueMarker = true
+    	marker = new L.marker([e.latlng.lat, e.latlng.lng,]).addTo(map);
 		})
 	</script>
+	<script type="text/javascript" src="static\js\script.js"></script>
 </body>
 </html>
