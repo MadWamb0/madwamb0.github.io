@@ -16,7 +16,7 @@ document.querySelector("form").addEventListener("submit", function (event) {
             }).then(function (data) {
                 console.log(data.hourly.time)
                 console.log(data.hourly.temperature_2m)
-                output.innerHTML="Data e ora: "+data.hourly.time[1]+" Temperatura: "+data.hourly.temperature_2m[1]
+                output.innerHTML="Data e ora: "+data.hourly.time[18]+" Temperatura: "+data.hourly.temperature_2m[18]+"°C"
             })
 
      
