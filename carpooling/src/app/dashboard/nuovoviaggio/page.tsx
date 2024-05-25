@@ -29,7 +29,7 @@ export default async function NuovoViaggio(){
         try{
             const veicolo=await db.veicolo.findUnique({
                 where:{
-                    targa:formdata.get("veicoloselezionato") as string,
+                    targa:formdata.get("veicoloselezionato") as string
                 }
             })
             await db.user.update({
@@ -51,6 +51,7 @@ export default async function NuovoViaggio(){
                     }
                 }
             })
+            
         }catch(e){
             console.error(e)
         }
